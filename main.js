@@ -5,4 +5,8 @@ $(function(){
         autoplay: true,
         autoplaySpeed: 1000,
     });
+
+    $(".menu-hamburguer").click(function(){
+        $("nav").slideToggle();
+    })
     })
