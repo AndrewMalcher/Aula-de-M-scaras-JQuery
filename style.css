@@ -8,21 +8,22 @@
 html{
     overflow-x: hidden;
 }
+
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
-header {
+header , footer {
     background-color: #192a56;
-    padding: 16px 0 0 0;
+    padding: 18px;
     color: white;
 
 }
 
-header > .container {
-    display: flex;
+header > .container,
+footer > .container {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16x;
@@ -51,8 +52,6 @@ nav li a {
 .menu-hamburguer{
     width: 32px;
     cursor: pointer;
-
-
 }
 
 .menu-hamburguer span{
@@ -102,7 +101,7 @@ section h2{
     margin: 0 5%
 }
 
-.lista-veiculos li button {
+button {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -111,9 +110,59 @@ section h2{
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
+    margin-top: 10px;
+    border-radius: 6px;
 }
 
 .price {
     margin:16px 0;
     display: block;
+}
+
+.price del{
+    color: #ababab;
+    font-size: 14px;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo textarea,
+.form-campo input{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea{
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button{
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer img{
+    height: 32px;
+}
+
+footer .container{
+    justify-content: space-between;
+    align-items: center;
 }
