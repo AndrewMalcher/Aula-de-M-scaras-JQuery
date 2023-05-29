@@ -15,7 +15,7 @@ html{
     margin: 0 auto;
 }
 
-header , footer {
+header, footer {
     background-color: #192a56;
     padding: 18px;
     color: white;
@@ -112,6 +112,7 @@ button {
     font-style: italic;
     margin-top: 10px;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .price {
