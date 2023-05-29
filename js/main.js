@@ -14,29 +14,29 @@ $(function () {
 
     $("form").validate({
         rules: {
-            nome: {
+            name: {
                 required: true
             },
             email: {
                 required: true,
                 email: true
             },
-            telefone: {
+            $telefone: {
                 required: true
             },
-            veicInteresse: {
+            $veiculo_de_Interesse: {
                 required: true
             },
-            mensagem: {
+            message: {
                 required: false
             },
         },
         // MUDA A MENSAGEM PADRÃO DE ERRO PARA A MENSAGEM ABAIXO
         messages: {
-            nome: ' Por favor, insira o seu nome.',
-            telefone: ' Por favor, insira o seu número de telefone/celular.',
+            name: ' Por favor, insira o seu nome.',
+            $telefone: ' Por favor, insira o seu número de telefone/celular.',
             email: ' Por favor, insira um email valido.',
-            veicInteresse: ' Por favor, insira o nome do seu carro de interesse.',
+            $veiculo_de_Interesse: ' Por favor, insira o nome do seu carro de interesse.',
         },
         
         invalidHandler: function (evento, validador) {
